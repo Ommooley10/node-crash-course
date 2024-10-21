@@ -9,7 +9,7 @@ const app = express();
 // connect to mongodb & listen for requests
 const dbURI = "mongodb+srv://netninja:test1234@net-ninja-tuts-del96.mongodb.net/node-tuts";
 
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })  //optional to do (useNewUrlParser wali line)
   .then(result => app.listen(3000))
   .catch(err => console.log(err));
 
